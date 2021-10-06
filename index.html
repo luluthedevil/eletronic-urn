@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Urna Eletrônica</title>
+</head>
+<body>
+    <div class="urna">
+        <div class="screen">
+            <div class="division--1">
+                <div class="division--1--left">
+                    <div class="d--1--1">
+                        <span>YOUR VOTE FOR:</span>
+                    </div>
+                    <div class="d--1--2">
+                        <span></span>
+                    </div>
+                    <div class="d--1--3">
+                        <div class="number blink"></div>
+                    </div>
+                    <div class="d--1--4">
+                    </div>
+                </div>
+                <div class="division--1--right">
+                </div>
+            </div>
+            <div class="division--2">
+                Press the button:<br/>
+                CONFIRM to confirm this vote <br/>
+                CORRECT to correct clean the fields
+            </div>
+        </div>
+        <div class="keyboard">
+            <div class="keyboard--line">
+                <div class="keyboard--button" onclick="clicked('1')">1</div>
+                <div class="keyboard--button" onclick="clicked('2')">2</div>
+                <div class="keyboard--button" onclick="clicked('3')">3</div>
+            </div>
+            <div class="keyboard--line">
+                <div class="keyboard--button" onclick="clicked('4')">4</div>
+                <div class="keyboard--button" onclick="clicked('5')">5</div>
+                <div class="keyboard--button" onclick="clicked('6')">6</div>
+            </div>
+            <div class="keyboard--line">
+                <div class="keyboard--button" onclick="clicked('7')">7</div>
+                <div class="keyboard--button" onclick="clicked('8')">8</div>
+                <div class="keyboard--button" onclick="clicked('9')">9</div>
+            </div>
+            <div class="keyboard--line">
+                <div class="keyboard--button" onclick="clicked('0')">0</div>
+            </div>
+            <div class="keyboard--line">
+                <div class="keyboard--button btn--white" onclick="white()">WHITE</div>
+                <div class="keyboard--button btn--correct" onclick="correct()">CORRECT</div>
+                <div class="keyboard--button btn--confirm" onclick="confirm()">CONFIRM</div>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <p>12345 or 66666 for senator <br/></p>
+        <p>42 or 99 for mayor</p>
+        <p>Reload the page to vote again!</p>
+    </div>
+    <script src="./candidates.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
